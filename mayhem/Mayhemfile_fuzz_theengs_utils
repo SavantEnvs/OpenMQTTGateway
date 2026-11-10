@@ -1,0 +1,8 @@
+project: savantenvs/OpenMQTTGateway
+target: fuzz_theengs_utils
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_theengs_utils/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_theengs_utils
+    libfuzzer: true

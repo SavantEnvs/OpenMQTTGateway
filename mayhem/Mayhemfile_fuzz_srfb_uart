@@ -1,0 +1,8 @@
+project: savantenvs/OpenMQTTGateway
+target: fuzz_srfb_uart
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_srfb_uart/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_srfb_uart
+    libfuzzer: true
